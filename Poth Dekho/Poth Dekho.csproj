@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{421C5C90-6EC6-4F18-9847-1F6566BA7FF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Poth_Dekho</RootNamespace>
+    <AssemblyName>Poth Dekho</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_us.Designer.cs">
+      <DependentUpon>About_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_add_guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_add_guide.Designer.cs">
+      <DependentUpon>admin_add_guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_guide_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_guide_information.Designer.cs">
+      <DependentUpon>admin_guide_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_add_traveller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_add_traveller.Designer.cs">
+      <DependentUpon>admin_add_traveller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_booked_packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_booked_packages.Designer.cs">
+      <DependentUpon>admin_booked_packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_dashboard.Designer.cs">
+      <DependentUpon>admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_login.Designer.cs">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Reg.Designer.cs">
+      <DependentUpon>Admin_Reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_view_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_view_profile.Designer.cs">
+      <DependentUpon>admin_view_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booked_trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booked_trip.Designer.cs">
+      <DependentUpon>booked_trip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pothDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pothDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tourguide_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tourguide_dashboard.Designer.cs">
+      <DependentUpon>tourguide_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tourguide_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tourguide_reg.Designer.cs">
+      <DependentUpon>tourguide_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_tourpackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_tourpackage.Designer.cs">
+      <DependentUpon>admin_tourpackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tourguide_traveller_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tourguide_traveller_information.Designer.cs">
+      <DependentUpon>tourguide_traveller_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tourguide_view_trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tourguide_view_trip.Designer.cs">
+      <DependentUpon>tourguide_view_trip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tour_guide_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tour_guide_login.Designer.cs">
+      <DependentUpon>tour_guide_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tour_guide_profile_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tour_guide_profile_details.Designer.cs">
+      <DependentUpon>tour_guide_profile_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_traveller_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_traveller_information.Designer.cs">
+      <DependentUpon>admin_traveller_information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="traveller_create_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="traveller_create_account.Designer.cs">
+      <DependentUpon>traveller_create_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="traveller_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="traveller_dashboard.Designer.cs">
+      <DependentUpon>traveller_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="traveller_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="traveller_details.Designer.cs">
+      <DependentUpon>traveller_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="traveller_log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="traveller_log_in.Designer.cs">
+      <DependentUpon>traveller_log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choose_package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose_package.Designer.cs">
+      <DependentUpon>Choose_package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="traveller_view_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="traveller_view_profile.Designer.cs">
+      <DependentUpon>traveller_view_profile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About_us.resx">
+      <DependentUpon>About_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_add_guide.resx">
+      <DependentUpon>admin_add_guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_guide_information.resx">
+      <DependentUpon>admin_guide_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_add_traveller.resx">
+      <DependentUpon>admin_add_traveller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_booked_packages.resx">
+      <DependentUpon>admin_booked_packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_dashboard.resx">
+      <DependentUpon>admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_login.resx">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Reg.resx">
+      <DependentUpon>Admin_Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_view_profile.resx">
+      <DependentUpon>admin_view_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booked_trip.resx">
+      <DependentUpon>booked_trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tourguide_dashboard.resx">
+      <DependentUpon>tourguide_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tourguide_reg.resx">
+      <DependentUpon>tourguide_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_tourpackage.resx">
+      <DependentUpon>admin_tourpackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tourguide_traveller_information.resx">
+      <DependentUpon>tourguide_traveller_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tourguide_view_trip.resx">
+      <DependentUpon>tourguide_view_trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tour_guide_login.resx">
+      <DependentUpon>tour_guide_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tour_guide_profile_details.resx">
+      <DependentUpon>tour_guide_profile_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_traveller_information.resx">
+      <DependentUpon>admin_traveller_information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="traveller_create_account.resx">
+      <DependentUpon>traveller_create_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="traveller_dashboard.resx">
+      <DependentUpon>traveller_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="traveller_details.resx">
+      <DependentUpon>traveller_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="traveller_log_in.resx">
+      <DependentUpon>traveller_log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose_package.resx">
+      <DependentUpon>Choose_package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="traveller_view_profile.resx">
+      <DependentUpon>traveller_view_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="pothDBDataSet.xsc">
+      <DependentUpon>pothDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pothDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pothDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pothDBDataSet.xss">
+      <DependentUpon>pothDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-image-available.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
